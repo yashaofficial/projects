@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body dir="rtl">
+
+    <div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, id.</p>
+
+        <h3>Lorem, ipsum dolor.</h3>
+
+        <button>بعدی</button>
+
+    </div>
+    
+</body>
+
+<script>
+
+    const divQ = document.querySelector('div')
+    const quote = document.querySelector('p')
+    const nameQuote = document.querySelector('h3')
+    const next = document.querySelector('button')
+    const quotes = [
+    {name: 'حسین پناهی', quote: 'جا مانده است چیزی جایی که هیچ گاه دیگر هیچ چیز جایش را پر نخواهد کرد... نه موهای سیاهُ نه دندان های سفید!'},
+    {name: 'پل الوار', quote: 'حکایت درخت خواب دیدم ما را بریدند و به کار خانه چوب بری بردند آنکه عاشق بود پنجره شد آنکه بی رحم، چوبه ی دار از من اما دری ساختند برای گذشتن...'},
+    {name: 'چارلی چاپلین', quote: 'شما تنها زمانی به قدرت نیاز دارید که قصد انجام کار مضری را داشته باشید در غیر این صورت عشق برای انجام هر کاری کافی ست.'},
+    {name: 'سینا بهمنش', quote: 'دستانم بوی گل می داد به جرم چیدن گل به کویرم تبعیدم کردند و یک نفر نگفت: شاید گلی کاشته باشد!!!!!!!!!!!'},
+    {name: 'ارد بزرگ', quote: 'آنگاه که شب فرا رسید و همه پدیدگان فرو خُفتند ابردریاها به پا می خیزند، آیا تو هم بر می خیزی ؟؟؟؟؟؟؟؟؟'}
+    ]
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+        let randomQuote = Math.trunc(Math.random() * quotes.length)
+        quote.innerHTML = quotes[randomQuote].quote
+        nameQuote.innerHTML = quotes[randomQuote].name
+
+    })
+
+    next.addEventListener('click', () => {
+
+        let randomQuote = Math.trunc(Math.random() * quotes.length)
+        quote.innerHTML = quotes[randomQuote].quote
+        nameQuote.innerHTML = quotes[randomQuote].name
+
+    })
+
+</script>
+
+</html>
