@@ -2,27 +2,28 @@ div{
 
     width: 700px;
     height: 300px;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0px 0px 8px -2px black;
     margin: auto;
 
 }
 p{
 
+    font-family: farsido;
     font-size: 20px;
-    padding-top: 90px;
-    padding-right: 30px;
+    padding: 50px 30px 0px 30px;
     
 }
 h3{
 
     padding-right: 560px;
-    margin-top: 20px;
 
 }
 button{
 
-    margin-right: 560px;
+    position: absolute;
+    top: 250px;
+    right: 600px;
     padding: 12px 35px;
     border: none;
     background-color: aquamarine;
@@ -35,5 +36,12 @@ button{
 button:hover{
 
     background-color: aqua;
+
+}
+
+@font-face {
+
+    font-family: farsido;
+    src: url(../fonts/Mj_Two\ Medium_0.ttf);
 
 }
